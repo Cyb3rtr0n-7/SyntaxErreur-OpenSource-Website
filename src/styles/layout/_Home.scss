@@ -1,8 +1,16 @@
+@use '../util/animations' as *;
+
 .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     &__marquee {
         position: absolute;
         overflow: hidden;
         width: auto;
+        left: 0;
         writing-mode: vertical-lr;
 
         @media (min-width : 750px) {
@@ -16,5 +24,18 @@
             background: rgba(255, 255, 255, 0.2);
         }
 
+    }
+
+    &__container {
+        &__title {
+            width: auto;
+            margin-top: 2rem;
+
+            &__wrapper {
+                border: 5px solid white;
+                padding-inline: 2rem;
+                animation: riseUp 6s;
+            }
+        }
     }
 }
