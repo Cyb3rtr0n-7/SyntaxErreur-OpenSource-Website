@@ -37,5 +37,14 @@
                 animation: riseUp 6s;
             }
         }
+
+        &__scrollLine {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5px;
+            background: white;
+            animation: riseUp 6s;
+        }
     }
 }
