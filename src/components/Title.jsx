@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Title(props) {
   return (
-    <div>
-      <h1>{props.content}</h1>
+    <div className="title">
+      <div className="title__container">
+        <h2>{props.content}</h2>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.title {
+
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        border: 5px solid white;
+        width: 60vw;
+        padding: 1rem 16rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-family: 'Kanit';
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+        }
+    }
+}
